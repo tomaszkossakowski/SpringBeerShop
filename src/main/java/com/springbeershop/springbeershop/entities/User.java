@@ -36,9 +36,6 @@ public class User
     @Column(name = "password")
     private String password;
 
-    @Column(name = "user_info")
-    private String userInfo;
-
     @Column(name = "email")
     private String email;
 
@@ -48,6 +45,6 @@ public class User
     @Column(name = "deleted")
     private Date deleted;
 
-    @Column(name = "password_changed")
-    private Boolean passwordChanged;
+    @Column(name = "password_validity")
+    private Date passwordValidity;
 }
