@@ -10,7 +10,5 @@ public class SpringbeershopApplication
 
     public static void main(String[] args)
     {
-        SpringApplication.run(SpringbeershopApplication.class, args);
-    }
-
+        SpringApplication.run(SpringbeershopApplication.class, args); }
 }
