@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=yes"/>
+  <title>BeerShop</title>
+  <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+
+</head>
+<body>
+<div>
+  <div th:replace="fragments/header :: header"></div>
+
+  <div class="container-fluid col-md-8 offset-2">
+    <div layout:fragment="content"></div>
+  </div>
+
+  <div th:replace="fragments/footer :: footer"></div>
+
+
+</div>
+</body>
+</html>
