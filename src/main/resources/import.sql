@@ -8,5 +8,5 @@ INSERT INTO public.user (user_name,user_surname, user_login, email, password, cr
 INSERT INTO public.user (user_name,user_surname, user_login, email, password, creation_date, deleted, password_validity) VALUES ('Filip', 'Filipiak','Filip', 'Filip@Filipiak.pl', 'test7', '2010-02-13', null, '2019-09-16');
 INSERT INTO public.user (user_name,user_surname, user_login, email, password, creation_date, deleted, password_validity) VALUES ('Gośka', 'Gosińska','Gośka', 'Gośka@Gosińska.pl', 'test8', '2019-04-16', '2019-09-16', '2019-10-16');
 
-INSERT INTO public.beers (beer_name,brewery_name,type_of_beer,description,beer_capacity,price,alcoholic_strength,quantity,extract) VALUES ('tyskie','tyskie','GRUPA_ZYWIEC','tyskie',1,2.3, 3, 4, 5);
-INSERT INTO public.beers (beer_name,brewery_name,type_of_beer,description,beer_capacity,price,alcoholic_strength,quantity,extract) VALUES ('Żywiec','Żywiec','GRUPA_ZYWIEC','Żywiec',1,2.3, 3, 4, 5);
+INSERT INTO public.beers (beer_name,brewery_name,type_of_beer,description,beer_capacity,price,alcoholic_strength,stock_level,quantity,extract) VALUES ('tyskie','tyskie','GRUPA_ZYWIEC','tyskie',1,2.3, 3,100, 4, 5);
+INSERT INTO public.beers (beer_name,brewery_name,type_of_beer,description,beer_capacity,price,alcoholic_strength,stock_level,quantity,extract) VALUES ('Żywiec','Żywiec','GRUPA_ZYWIEC','Żywiec',1,2.3, 3,35, 4, 5);
