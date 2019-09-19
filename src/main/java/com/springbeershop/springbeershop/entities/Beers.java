@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Data;
+import lombok.Getter;
 
 
 @Data
@@ -26,7 +27,7 @@ public class Beers
     private String beerName;
 
     @Enumerated(EnumType.STRING)
-    private Beers.brewery_name brewery_name;
+    private breweryName breweryName;
 
     @Column(name = "type_of_beer", length = 60)
     private String typeOfBeer;
@@ -35,7 +36,7 @@ public class Beers
     private String description;
 
     @Enumerated(EnumType.STRING)
-    private beer_capacity beerCapacity;
+    private Beers.beerCapacity beerCapacity;
 
     @Column(name = "price")
     private Double price;
@@ -52,7 +53,7 @@ public class Beers
     @Column(name = "stock_level")
     private Integer stockLevel;
 
-    private enum brewery_name
+    private enum breweryName
     {
         GRUPA_ZYWIEC,
         CARLSBERG_POLSKA,
@@ -61,15 +62,19 @@ public class Beers
         BROWARY_REGIONALNE_JAKUBIAK;
     }
 
-    public enum beer_capacity
+    public enum beerCapacity
     {
         LITER(1),
         HALF_A_LITRE(0.5),
         QUARTER_OF_A_LITRE(0.25),
         THREE_QUARTERS(0.75);
 
-        beer_capacity(final double i)
+        @Getter
+        private final double value;
+
+        beerCapacity(final double value)
         {
+            this.value = value;
         }
     }
 }
