@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -34,7 +35,7 @@ public class Brewery
     @Column(name = "locality")
     private String locality;
 
-    @Column(name = "Production_capacity_(hl)")
+    @Column(name = "Production_capacity")
     private Integer ProductionCapacity;
 
     @Column(name = "history")
@@ -42,4 +43,7 @@ public class Brewery
 
     @Column(name = "tidbits")
     private String tidbits;
+
+    @ManyToOne
+    private Beers beers;
 }

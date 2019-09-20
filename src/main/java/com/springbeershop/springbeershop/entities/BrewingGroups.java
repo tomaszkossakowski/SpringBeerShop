@@ -54,8 +54,8 @@ public class BrewingGroups
     @Column(name = "history")
     private String history;
 
-    @Column(name = "titbits")
-    private String titbits;
+    @Column(name = "tidbits")
+    private String tidbits;
 
     private enum brewingGroupsName
     {
