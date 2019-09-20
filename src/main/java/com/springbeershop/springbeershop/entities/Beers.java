@@ -27,7 +27,7 @@ public class Beers
     @Column(name = "beer_id")
     private Integer beerId;
 
-    @Column(name = "beer_name", length = 60)
+    @Column(name = "beer_name", nullable = false, length = 60)
     private String beerName;
 
     @Column(name = "brewery_id")
@@ -42,7 +42,7 @@ public class Beers
     @Enumerated(EnumType.STRING)
     private Beers.beerCapacity beerCapacity;
 
-    @Column(name = "price")
+    @Column(name = "price", nullable = false)
     private BigDecimal price;
 
     @Column(name = "alcoholic_strength")
@@ -54,7 +54,7 @@ public class Beers
     @Column(name = "extract")
     private Integer extract;
 
-    @Column(name = "stock_level")
+    @Column(name = "stock_level", nullable = false)
     private Integer stockLevel;
 
     public enum beerCapacity
