@@ -1,4 +1,4 @@
-package com.springbeershop.springbeershop.entities;
+package com.springbeershop.springbeershop.entities.beer;
 
 import java.math.BigDecimal;
 
@@ -33,7 +33,7 @@ public class Beers
     @Column(name = "type_of_beer", length = 60)
     private String typeOfBeer;
 
-    @Column(name = "description")
+    @Column(name = "description", length = 1000)
     private String description;
 
     @Enumerated(EnumType.STRING)
@@ -43,13 +43,10 @@ public class Beers
     private BigDecimal price;
 
     @Column(name = "alcoholic_strength")
-    private Integer alcoholicStrength;
-
-    @Column(name = "quantity")
-    private Integer quantity;
+    private Double alcoholicStrength;
 
     @Column(name = "extract")
-    private Integer extract;
+    private Double extract;
 
     @Column(name = "stock_level", nullable = false)
     private Integer stockLevel;

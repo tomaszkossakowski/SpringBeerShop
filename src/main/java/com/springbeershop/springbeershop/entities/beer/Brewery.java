@@ -1,4 +1,4 @@
-package com.springbeershop.springbeershop.entities;
+package com.springbeershop.springbeershop.entities.beer;
 
 import java.util.Date;
 import java.util.List;
@@ -36,13 +36,13 @@ public class Brewery
     @Column(name = "locality")
     private String locality;
 
-    @Column(name = "Production_capacity")
-    private Integer ProductionCapacity;
+    @Column(name = "production_capacity")
+    private Integer productionCapacity;
 
-    @Column(name = "history")
+    @Column(name = "history", length = 3000)
     private String history;
 
-    @Column(name = "tidbits")
+    @Column(name = "tidbit")
     private String tidbits;
 
     @OneToMany(mappedBy = "brewery")
