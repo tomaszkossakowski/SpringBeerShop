@@ -1,7 +1,6 @@
 package com.springbeershop.springbeershop.entities;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,7 +9,8 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -29,9 +29,6 @@ public class Beers
 
     @Column(name = "beer_name", nullable = false, length = 60)
     private String beerName;
-
-    @Column(name = "brewery_id")
-    private String breweryId;
 
     @Column(name = "type_of_beer", length = 60)
     private String typeOfBeer;
@@ -57,8 +54,9 @@ public class Beers
     @Column(name = "stock_level", nullable = false)
     private Integer stockLevel;
 
-    @OneToMany(mappedBy = "beers")
-    private List<Brewery> brewery;
+    @ManyToOne()
+    @JoinColumn(name = "brewery_id")
+    private Brewery brewery;
 
     public enum beerCapacity
     {
