@@ -1,7 +1,7 @@
 package com.springbeershop.springbeershop.services.registration;
 
 import com.springbeershop.springbeershop.dao.user.UserRepository;
-import com.springbeershop.springbeershop.entities.User;
+import com.springbeershop.springbeershop.entities.user.User;
 import java.util.Date;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.springbeershop.springbeershop.controllers.registration;
 
-import com.springbeershop.springbeershop.entities.User;
+import com.springbeershop.springbeershop.entities.user.User;
 import com.springbeershop.springbeershop.services.registration.RegistrationUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;

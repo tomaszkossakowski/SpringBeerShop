@@ -1,4 +1,4 @@
-package com.springbeershop.springbeershop.entities;
+package com.springbeershop.springbeershop.entities.user;
 
 import java.util.Date;
 

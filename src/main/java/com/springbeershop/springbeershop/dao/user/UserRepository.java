@@ -1,6 +1,6 @@
 package com.springbeershop.springbeershop.dao.user;
 
-import com.springbeershop.springbeershop.entities.User;
+import com.springbeershop.springbeershop.entities.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
