@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 
 import lombok.Data;
 
@@ -28,6 +29,7 @@ public class User
     @Column(name = "user_surname", length = 60)
     private String userSurname;
 
+    @NotBlank
     @Column(name = "user_login", length = 60, nullable = false, unique = true)
     private String userLogin;
 
