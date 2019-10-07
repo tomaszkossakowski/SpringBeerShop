@@ -1,4 +1,4 @@
-package com.springbeershop.springbeershop.dao;
+package com.springbeershop.springbeershop.dao.beer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
