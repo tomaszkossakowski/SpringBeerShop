@@ -1,6 +1,11 @@
+----------------------------------------------------------------------------
+---------------------------------USERS--------------------------------------
+----------------------------------------------------------------------------
+
 --------------------------------------------------------------------------
 -------------------------------USERS--------------------------------------
 --------------------------------------------------------------------------
+
 INSERT INTO public.user (user_name, user_surname, user_login, email, password, creation_date, deleted, password_validity) VALUES ('Albert', 'Albertowski', 'Albert', 'Albert@Albertowski.pl', 'test1', '2019-09-16', null, now());
 INSERT INTO public.user (user_name, user_surname, user_login, email, password, creation_date, deleted, password_validity) VALUES ('Helena', 'Trojańska', 'Helena', 'Helena@Trojańska.pl', 'test2', '2019-09-14', null, '2019-10-16');
 INSERT INTO public.user (user_name, user_surname, user_login, email, password, creation_date, deleted, password_validity) VALUES ('Bolek', 'Bolesław', 'Bolek', 'Bolek@Bolesław.pl', 'test3', '2019-09-01', null, '2019-10-16');
@@ -9,7 +14,6 @@ INSERT INTO public.user (user_name, user_surname, user_login, email, password, c
 INSERT INTO public.user (user_name, user_surname, user_login, email, password, creation_date, deleted, password_validity) VALUES ('Eryk', 'Erycki', 'Eryk', 'Eryk@Erycki.pl', 'test6', '2019-01-12', '2019-09-16', '2019-10-16');
 INSERT INTO public.user (user_name, user_surname, user_login, email, password, creation_date, deleted, password_validity) VALUES ('Filip', 'Filipiak', 'Filip', 'Filip@Filipiak.pl', 'test7', '2010-02-13', null, '2019-09-16');
 INSERT INTO public.user (user_name, user_surname, user_login, email, password, creation_date, deleted, password_validity) VALUES ('Gośka', 'Gosińska', 'Gośka', 'Gośka@Gosińska.pl', 'test8', '2019-04-16', '2019-09-16', '2019-10-16');
-
 
 --------------------------------------------------------------------------
 ------------------------------BREWERY-------------------------------------
@@ -22,3 +26,4 @@ INSERT INTO BREWERY (PRODUCTION_CAPACITY, BREWERY_NAME, BREWERY_GROUPS_ID, HISTO
 --------------------------------------------------------------------------
 
 INSERT INTO public.beers (ALCOHOLIC_STRENGTH, BEER_CAPACITY, BEER_NAME, DESCRIPTION, EXTRACT, PRICE, STOCK_LEVEL, TYPE_OF_BEER) VALUES (5.7, 0.5, 'Ciechan Miodowe', 'Ciechan Miodowe – jasne, niefiltrowane piwo miodowe z browaru Ciechan w Ciechanowie, powstałe na bazie naturalnego miodu, który powoduje zmętnienie piwa. Piwo zawiera 12,1% ekstraktu, a z dodatkiem miodu 14,0% oraz 5,7% obj. alkoholu. Ciechan Miodowe zadebiutował w roku 2004. Piwo jest pasteryzowane. Browar do produkcji piwa miodowego zużywa ok. 3 ton miodu miesięcznie dostarczanego przez zakład Mazurskie Miody ZPH Karolina.', 12.1, 5.5, 10, 'miodowe');
+
