@@ -15,7 +15,7 @@ public class UserPrincipal implements UserDetails
 
     private User user;
 
-    public UserPrincipal(final User user)
+    UserPrincipal(final User user)
     {
         super();
         this.user = user;
@@ -36,7 +36,12 @@ public class UserPrincipal implements UserDetails
     @Override
     public String getUsername()
     {
-        return user.getUserName();
+        return null;
+    }
+
+    public String getUserLogin()
+    {
+        return user.getUserLogin();
     }
 
     @Override
