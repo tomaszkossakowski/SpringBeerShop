@@ -1,6 +1,7 @@
 package com.springbeershop.springbeershop.entities.beer;
 
-import java.math.BigDecimal;
+import com.springbeershop.springbeershop.enums.CapacityEnum;
+import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,16 +13,13 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
-import lombok.Data;
-import lombok.Getter;
+import java.math.BigDecimal;
 
 
 @Data
 @Entity
 @Table(name = "beers", schema = "public")
-public class Beers
-{
+public class Beer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "beer_id")
@@ -37,7 +35,7 @@ public class Beers
     private String description;
 
     @Enumerated(EnumType.STRING)
-    private Beers.beerCapacity beerCapacity;
+    private CapacityEnum beerCapacity;
 
     @Column(name = "price", nullable = false)
     private BigDecimal price;
@@ -55,21 +53,7 @@ public class Beers
     @JoinColumn(name = "brewery_id")
     private Brewery brewery;
 
-    public enum beerCapacity
-    {
-        LITER(1),
-        HALF_A_LITRE(0.5),
-        QUARTER_OF_A_LITRE(0.25),
-        THREE_QUARTERS(0.75);
 
-        @Getter
-        private final double value;
-
-        beerCapacity(final double value)
-        {
-            this.value = value;
-        }
-    }
 }
 
 

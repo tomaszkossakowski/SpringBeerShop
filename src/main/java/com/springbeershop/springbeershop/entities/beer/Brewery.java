@@ -46,5 +46,5 @@ public class Brewery
     private String tidbits;
 
     @OneToMany(mappedBy = "brewery")
-    private List<Beers> beers;
+    private List<Beer> beers;
 }
